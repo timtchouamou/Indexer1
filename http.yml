@@ -5,8 +5,4 @@
       yum
         name: httpd
         state: started
-        
-    - name: Atart HTTP
-      systemd:
-         name: httpd
-         state: started
+  
