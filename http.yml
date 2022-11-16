@@ -6,8 +6,6 @@
       yum:
        name: httpd
        state: present
-<<<<<<< HEAD
-=======
 
     - name: Start HTTPD
       systemd:
@@ -22,4 +20,3 @@
        permanent: true
        immediate: yes
        state: enabled
->>>>>>> Indexer2
