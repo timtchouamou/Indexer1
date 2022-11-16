@@ -6,3 +6,20 @@
       yum:
        name: httpd
        state: present
+<<<<<<< HEAD
+=======
+
+    - name: Start HTTPD
+      systemd:
+       name: httpd
+       state: started
+       enabled: yes
+
+
+    - name: Allow HTTPD on FIREWALL
+      firewalld:
+       service: http
+       permanent: true
+       immediate: yes
+       state: enabled
+>>>>>>> Indexer2
