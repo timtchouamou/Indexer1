@@ -7,16 +7,3 @@
        name: httpd
        state: present
 
-    - name: Start HTTPD
-      systemd:
-       name: httpd
-       state: started
-       enabled: yes
-
-
-    - name: Allow HTTPD on FIREWALL
-      firewalld:
-       service: http
-       permanent: true
-       immediate: yes
-       state: enabled
