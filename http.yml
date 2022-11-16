@@ -1,8 +1,8 @@
 - hosts: all
   become: yes
   tasks:
-    - name: Install http
-      yum
-        name: httpd
-        state: started
-  
+
+    - name: Install HTTPD
+      yum:
+       name: httpd
+       state: present
