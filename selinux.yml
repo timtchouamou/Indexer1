@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+   - name: Turn selinux to Enforcing mode
+     selinux:
+       policy: targeted
+       state: enforcing
+      
