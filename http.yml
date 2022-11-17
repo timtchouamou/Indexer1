@@ -13,8 +13,7 @@
        state: started
        enabled: yes
 
-
-    - name: Allow HTTPD on FIREWALL
+    - name: Allow HTTPD ON FIREWALL
       firewalld:
        service: http
        permanent: true
